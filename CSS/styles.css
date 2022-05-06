@@ -290,6 +290,11 @@ button {
 
 /* Портфолио */
 
+.portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .portfolio .button:hover,
 .portfolio .button:focus {
     color: var(--primary-white-color);
@@ -297,6 +302,8 @@ button {
 }
 
 .portfolio .button {
+    margin-bottom: 50px;
+    border-radius: 4px;
     background-color: var(--primary-button-bg-color);
 
     font-weight: 500;
@@ -304,7 +311,16 @@ button {
     line-height: 1.63;
 }
 
+.projects .link {
+    display: inline-block;
+}
+
+.projects .img {
+    margin-bottom: 20px;
+}
+
 .projects .title {
+    margin-bottom: 4px;
     color: var(--title-text-color);
 
     font-weight: 700;
@@ -314,6 +330,11 @@ button {
 }
 
 .projects .text {
+    margin-bottom: 20px;
     font-size: 16px;
     line-height: 1.89;
+}
+
+.projects .link {
+    margin-bottom: 30px;
 }
