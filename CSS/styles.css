@@ -22,14 +22,33 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 1170px;
+    padding-left: 20px;
+    padding-right: 20px;
     outline: 2px solid tomato;
 }
 
 .list {
+    padding: 0;
+    margin: 0;
     list-style: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 /* Студия*/
+.page-header .container {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
 
 .logo {
     color: var(--accent-color);
@@ -89,19 +108,22 @@ body {
 }
 
 .section-hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
     background-color: var(--primary-footer-bg-color);
 }
 
 .section-hero .title {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 30px;
+    
     color: var(--primary-white-color);
-
+   
     font-weight: 900;
     font-size: 44px;
     line-height: 1.44;
 
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
@@ -124,6 +146,10 @@ button {
 }
 
 .button.primary {
+    padding: 10px 32px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
     color: var(--primary-white-color);
     background-color: var(--accent-color);
     font-weight: 700;
@@ -139,7 +165,14 @@ button {
     background-color: var(--accent-bg-hover-color);
 }
 
+.section-rules {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .section-rules .title {
+    margin-top: 0;
+    margin-bottom: 10px;
     color: var(--title-text-color);
 
     font-weight: 700;
@@ -150,11 +183,17 @@ button {
 
 
 .section-rules .text {
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 14px;
     line-height: 1.71;
 }
 
+.section-work {
+    padding-bottom: 94px;
+}
 .section-work .title {
+    margin-bottom: 50px;
     color: var(--title-text-color);
 
     font-weight: 700;
@@ -165,10 +204,13 @@ button {
 }
 
 .section-team {
+    padding-top: 94px;
+    padding-bottom: 94px;
     background-color: var(--primary-team-bg-color);
 }
 
 .section-team .title {
+    margin-bottom: 50px;
     color: var(--title-text-color);
 
     font-weight: 700;
@@ -178,6 +220,7 @@ button {
 }
 
 .section-team .title-mamber {
+    margin-bottom: 10px;
     color: var(--title-text-color);
 
     font-weight: 500;
@@ -187,18 +230,32 @@ button {
 }
 
 .section-team .text {
+    margin-bottom: 30px;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
 }
 
+.section-team .img {
+    margin-bottom: 30px;
+}
 
 .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: var(--primary-footer-bg-color);
 }
 
 .footer span {
     color: var(--primary-white-color)
+}
+
+.logo {
+    display: inline-block;
+}
+
+.footer .logo {
+    margin-bottom: 20px;
 }
 
 .footer .adress {
@@ -209,7 +266,15 @@ button {
     line-height: 1.71;
 }
 
+.footer .list {
+    padding: 0;
+}
+.footer .adress {
+    margin-bottom: 9px;
+}
 .footer .link {
+    display: inline-block;
+    margin-bottom: 9px;
     color: var(--primary-footer-text-color);
 
     font-style: normal;
