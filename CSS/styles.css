@@ -9,6 +9,7 @@
     --primary-team-bg-color: #F5F4FA;
     --accent-bg-hover-color: #188CE8;
     --border-color: #EEEEEE;
+    --border-footer: #ECECEC;
 }
 
 body {
@@ -45,6 +46,10 @@ p {
 }
 
 /* Студия*/
+
+.page-header {
+    border-bottom: 1px solid var(--border-footer);
+}
 
 .main-nav {
     align-items: center;
@@ -249,6 +254,11 @@ button {
     margin-left: 30px;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 
 .section-team {
     padding-top: 94px;
@@ -315,7 +325,10 @@ button {
 }
 
 .footer .logo {
+    margin-right: 0;
     margin-bottom: 20px;
+    padding: 0;
+   
 }
 
 .footer .adress {
@@ -334,9 +347,8 @@ button {
 }
 .footer .link {
     display: inline-block;
-    margin-bottom: 9px;
     color: var(--primary-footer-text-color);
-
+    
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
@@ -346,6 +358,10 @@ button {
 .footer .link:hover,
 .footer .link:focus {
     color: var(--accent-color);
+}
+
+.footer .item:not(:last-child) {
+    margin-bottom: 9px;
 }
 
 /* Портфолио */
@@ -369,6 +385,7 @@ button {
 .portfolio .button:focus {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .filter .item + .item {
@@ -398,9 +415,6 @@ button {
     width: calc((100% - 60px) / 3);
     margin-right: 30px;
     margin-bottom: 30px;
-    
-    background-color: var(--primary-white-color);
-    border: 1px solid var(--border-color);
 }
 
 .projects .item:nth-child(3n) {
@@ -415,15 +429,8 @@ button {
     display: inline-block;
 }
 
-.projects .img {
-    margin-bottom: 20px;
-}
-
 .projects .title {
-    margin-right: 24px;
-    margin-bottom: 4px;
-    margin-left: 24px;
-    color: var(--title-text-color);
+     color: var(--title-text-color);
 
     font-weight: 700;
     font-size: 18px;
@@ -432,9 +439,16 @@ button {
 }
 
 .projects .text {
-    margin-right: 24px;
-    margin-bottom: 20px;
-    margin-left: 24px;
     font-size: 16px;
     line-height: 1.89;
+}
+
+.projects .border {
+    padding: 20px 24px;
+
+    background-color: var(--primary-white-color);
+    border: 1px solid var(--border-color);
+    border-top: none;
+
+
 }
