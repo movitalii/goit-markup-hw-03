@@ -8,6 +8,7 @@
     --primary-footer-bg-color: #2F303A;
     --primary-team-bg-color: #F5F4FA;
     --accent-bg-hover-color: #188CE8;
+    --border-color: #EEEEEE;
 }
 
 body {
@@ -24,7 +25,6 @@ body {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 2px solid blue;
 }
 
 .list {
@@ -355,14 +355,32 @@ button {
     padding-bottom: 94px;
 }
 
+.filter {
+    margin-bottom: 34px;
+    margin-right: 279px;
+    margin-left: 279px;
+}
+
+.portfolio .list {
+    display: flex;
+}
+
 .portfolio .button:hover,
 .portfolio .button:focus {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
 }
 
+.filter .item + .item {
+    margin-left: 8px;
+}
+
 .portfolio .button {
-    margin-bottom: 50px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 22px;
+    padding-left: 22px;
+
     border-radius: 4px;
     background-color: var(--primary-button-bg-color);
 
@@ -377,10 +395,12 @@ button {
 }
 
 .projects .item {
-    outline: 1px solid tomato;
     width: calc((100% - 60px) / 3);
     margin-right: 30px;
     margin-bottom: 30px;
+    
+    background-color: var(--primary-white-color);
+    border: 1px solid var(--border-color);
 }
 
 .projects .item:nth-child(3n) {
@@ -400,7 +420,9 @@ button {
 }
 
 .projects .title {
+    margin-right: 24px;
     margin-bottom: 4px;
+    margin-left: 24px;
     color: var(--title-text-color);
 
     font-weight: 700;
@@ -410,7 +432,9 @@ button {
 }
 
 .projects .text {
+    margin-right: 24px;
     margin-bottom: 20px;
+    margin-left: 24px;
     font-size: 16px;
     line-height: 1.89;
 }
