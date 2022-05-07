@@ -21,9 +21,9 @@ body {
 .container {
     margin-left: auto;
     margin-right: auto;
-    width: 1170px;
-    padding-left: 20px;
-    padding-right: 20px;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
     outline: 2px solid tomato;
 }
 
@@ -45,15 +45,19 @@ p {
 }
 
 /* Студия*/
-.page-header .container {
-    padding-top: 25px;
-    padding-bottom: 25px;
+
+.main-nav {
+    align-items: center;
+    display: flex;
 }
 
 .logo {
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+
     color: var(--accent-color);
     font-family: Raleway, sans-serif;
-
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -70,11 +74,21 @@ p {
     text-decoration: none;
 }
 
+.site-nav {
+    display: flex;
+}
+
+.site-nav .item + .item {
+    margin-left: 50px;
+}
 
 
 .site-nav .link {
-    color: var(--title-text-color);
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 
+    color: var(--title-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -91,10 +105,20 @@ p {
     color: var(--accent-color);
 }
 
+.contacts {
+    margin-left: auto;
+    display: flex;
+}
+
+.contacts .item + .item {
+    margin-left: 50px;
+}
 
 .contacts .link {
-    color: var(--primary-text-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
 
+    color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -110,6 +134,8 @@ p {
 .section-hero {
     padding-top: 200px;
     padding-bottom: 200px;
+    padding-right: 452px;
+    padding-left: 425px;
     text-align: center;
     background-color: var(--primary-footer-bg-color);
 }
@@ -165,11 +191,22 @@ button {
     background-color: var(--accent-bg-hover-color);
 }
 
+.rules {
+    display: flex;
+}
+
 .section-rules {
     padding-top: 94px;
     padding-bottom: 94px;
 }
 
+.rules .item {
+    width: 270px;
+}
+
+.rules .item + .item{
+    margin-left: 30px;
+}
 .section-rules .title {
     margin-top: 0;
     margin-bottom: 10px;
@@ -311,6 +348,26 @@ button {
     line-height: 1.63;
 }
 
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projects .item {
+    outline: 1px solid tomato;
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.projects .item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.projects .item:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+}
+
 .projects .link {
     display: inline-block;
 }
@@ -333,8 +390,4 @@ button {
     margin-bottom: 20px;
     font-size: 16px;
     line-height: 1.89;
-}
-
-.projects .link {
-    margin-bottom: 30px;
 }
