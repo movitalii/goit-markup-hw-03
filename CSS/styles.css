@@ -139,15 +139,13 @@ p {
 .section-hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    padding-right: 452px;
-    padding-left: 425px;
     text-align: center;
     background-color: var(--primary-footer-bg-color);
 }
 
 .section-hero .title {
-    margin-top: 0;
     margin-bottom: 30px;
+    width: 696px;
     
     color: var(--primary-white-color);
    
@@ -371,14 +369,11 @@ img {
     padding-bottom: 94px;
 }
 
-.filter {
-    margin-bottom: 34px;
-    margin-right: 279px;
-    margin-left: 279px;
-}
 
 .portfolio .list {
     display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
 }
 
 .portfolio .button:hover,
