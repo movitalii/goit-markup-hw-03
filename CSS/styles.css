@@ -143,12 +143,16 @@ p {
     background-color: var(--primary-footer-bg-color);
 }
 
+
 .section-hero .title {
     margin-bottom: 30px;
-    width: 696px;
+    margin-right: auto;
+    margin-left: auto;
     
+    width: 696px;
     color: var(--primary-white-color);
    
+    text-align: center;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.44;
